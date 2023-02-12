@@ -50,12 +50,12 @@
 		<div class="flex justify-evenly my-7">
 			<label for="groom-modal" class="w-1/3">
 				<div class="rounded-full shadow-2xl overflow-hidden">
-					<img src="/images/face/groom.png" alt="groom" />
+					<img src="/images/face/groom.png" width=333 height=333 alt="groom" />
 				</div>
 			</label>
 			<label for="bride-modal" class="w-1/3">
 				<div class="rounded-full shadow-2xl overflow-hidden">
-					<img src="/images/face/bride.png" alt="bride" />
+					<img src="/images/face/bride.png" width=333 height=333 alt="bride" />
 				</div>
 			</label>
 		</div>

@@ -19,7 +19,7 @@
 </script>
 
 <svelte:head>
-	<title>김신랑과 김신부의 결혼식에 초대합니다</title>
+	<title>박준하와 김선영의 결혼식에 초대합니다</title>
 </svelte:head>
 
 <Intro />

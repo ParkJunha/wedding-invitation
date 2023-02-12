@@ -31,7 +31,7 @@
 				{#each Array(8) as _, index (index)}
 					<SwiperSlide>
 						<div class="flex justify-center">
-							<img src="/images/album/1.png" alt={index + 1} />
+							<img src="/images/album/{index + 1 }.png" alt={index + 1} />
 						</div>
 					</SwiperSlide>
 				{/each}
@@ -46,7 +46,7 @@
 		>
 			{#each Array(8) as _, index (index)}
 				<SwiperSlide
-					><img class="thumb-img" src="/images/album/1.png" alt={index + 1} /></SwiperSlide
+					><img class="thumb-img" src="/images/album/{index + 1 }.png" alt={index + 1} /></SwiperSlide
 				>
 			{/each}
 		</Swiper>

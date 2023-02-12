@@ -3,22 +3,18 @@
 	import Intro from '$components/Intro.svelte';
 	import Message from '$components/Message.svelte';
 	import Location from '$components/Location.svelte';
-	import Guestbook from '$components/Guestbook.svelte';
 	import Footer from '$components/Footer.svelte';
 	import Account from '$components/Account.svelte';
 	import Saos from 'saos';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 
-	let guestbooks;
 	let isgroom = false;
 
 	onMount(async () => {
 		if ($page.url.searchParams.get('groom') === 'true') {
 			isgroom = true;
 		}
-		const res = await fetch('/api/guestbook');
-		guestbooks = (await res.json()).guestbooks.reverse().filter((guestbook) => !guestbook.hide);
 	});
 </script>
 
@@ -45,7 +41,6 @@
 		<Account />
 		<div class="divider" />
 	{/if}
-	<Guestbook {guestbooks} />
 	<div class="divider" />
 	<div class="mb-7">
 		<Footer {isgroom} />
